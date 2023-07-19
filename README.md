@@ -1,1 +1,2 @@
-# Final_Project_Python_x_MachineLearning
+# Final-Ex
+final Ex at Data analysis in Python course and machine learning

@@ -1,0 +1,69 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire</title>
+</head>
+<body>
+    <h1>Questionnaire</h1>
+    <form action="/predict" method="post">
+
+        <label for="City">City:</label>
+      <select id="City" name="City">
+  <option value="פתח תקווה">פתח תקווה</option>
+  <option value="נתניה">נתניה</option>
+  <option value="אר שבע">באר שבע</option>
+  <option value="הרצליה">הרצליה</option>
+  <option value="אריאל">אריאל</option>
+  <option value="דימונה">דימונה</option>
+  <option value="רחובות">רחובות</option>
+  <option value="גבעת שמואל">גבעת שמואל</option>
+  <option value="ירושלים">ירושלים</option>
+  <option value="שוהם">שוהם</option>
+  <option value="כפר סבא">כפר סבא</option>
+  <option value="רעננה">רעננה</option>
+  <option value="נהריה">נהריה</option>
+  <option value="זכרון יעקב">זכרון יעקב</option>
+  <option value="קרית ביאליק">קרית ביאליק</option>
+  <option value="חיפה">חיפה</option>
+  <option value="הוד השרון">הוד השרון</option>
+  <option value="תל אביב">תל אביב</option>
+  <option value="ראשון לציון">ראשון לציון</option>
+  <option value="יהוד מונסון">יהוד מונסון</option>
+  <option value="נס ציונה">נס ציונה</option>
+  <option value="אילת">אילת</option>
+  <option value="חולון">חולון</option>
+  <option value="מודיעין מכבים רעות">מודיעין מכבים רעות</option>
+  <option value="צפת">צפת</option>
+  <option value="בת ים">בת ים</option>
+  <option value="רמת גן">רמת גן</option>
+  <option value="נוף הגליל">נוף הגליל</option>
+  <option value="בית שאן">בית שאן</option>
+</select>
+        <label for="Type">Type:</label>
+       <select id="type" name="type">
+  <option value="דירה בבניין">דירה בבניין</option>
+  <option value="דירת גן">דירת גן</option>
+  <option value="בית פרטי">בית פרטי</option>
+  <option value="דו משפחתי">דו משפחתי</option>
+  <option value="פנטהאוז">פנטהאוז</option>
+  <option value="אחר">אחר</option>
+
+</select>
+
+       
+<label for="room_number">Number of Rooms:</label><br>
+<input type="number" id="room_number" name="room_number" step="0.5"><br>
+
+<label for="Area">Area:</label><br>
+<input type="number" id="Area" name="Area"><br>
+
+
+<label for="floor">Floor:</label><br>
+<input type="number" id="floor" name="floor"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Predicted Price: {{ price }}</h2>
+
+</body>
+</html>
